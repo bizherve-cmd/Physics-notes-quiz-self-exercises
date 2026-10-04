@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BIZIYAREMYE Donat — Physics Self-Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f4f6f9; --surface:#ffffff; --text:#161b26; --text-dim:#5b6475; --border:#dde2ea;
+    --accent:#0f7a73; --accent-soft:#e3f3f1;
+    --shadow:0 1px 2px rgba(20,24,34,.06), 0 8px 24px -12px rgba(20,24,34,.18);
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e131b; --surface:#161d29; --text:#e9edf4; --text-dim:#95a0b3; --border:#2a3342;
+      --accent:#3fd7c8; --accent-soft:#12312d;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:"IBM Plex Sans", system-ui, sans-serif; -webkit-font-smoothing:antialiased; padding:32px 16px;}
+  .wrap{max-width:640px; margin:0 auto;}
+  h1{font-family:"Sora", system-ui, sans-serif; font-size:26px; margin:0 0 8px; text-wrap:balance;}
+  .lead{color:var(--text-dim); font-size:15px; margin:0 0 24px;}
+  .levels{display:flex; flex-direction:column; gap:12px;}
+  .level{
+    display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:16px 18px; box-shadow:var(--shadow);
+  }
+  .level:hover{border-color:var(--accent);}
+  .badge{flex:none; font-family:"Sora", sans-serif; font-weight:700; font-size:16px; color:var(--accent); background:var(--accent-soft); border-radius:10px; width:46px; height:46px; display:flex; align-items:center; justify-content:center;}
+  .name{font-weight:600; font-size:16px;}
+  .meta{font-family:"IBM Plex Mono", monospace; font-size:12.5px; color:var(--text-dim); margin-top:3px;}
+  .arrow{margin-left:auto; color:var(--text-dim); font-size:18px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Physics Self-Study Quizzes</h1>
+  <p class="lead">By BIZIYAREMYE Donat — click a level to start practicing.</p>
+  <div class="levels">
+    <a class="level" href="/s3"><span class="badge">S3</span><span><div class="name">Senior 3 Physics</div><div class="meta">10 units · 400 questions</div></span><span class="arrow">&rarr;</span></a>
+    <a class="level" href="/s4"><span class="badge">S4</span><span><div class="name">Senior 4 Physics</div><div class="meta">10 units · 400 questions</div></span><span class="arrow">&rarr;</span></a>
+    <a class="level" href="/s5"><span class="badge">S5</span><span><div class="name">Senior 5 Physics</div><div class="meta">11 units · 440 questions</div></span><span class="arrow">&rarr;</span></a>
+  </div>
+</div>
+</body>
+</html>
